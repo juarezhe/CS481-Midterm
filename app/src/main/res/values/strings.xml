@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Midterm_HannahJuarez</string>
+
+    <string-array name="month">
+        <item>Mon</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="year">
+        <item>Year</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+    </string-array>
+
+    <string-array name="state">
+        <item>State</item>
+        <item>AK</item>
+        <item>AL</item>
+        <item>AR</item>
+        <item>AZ</item>
+        <item>CA</item>
+        <item>CO</item>
+        <item>CT</item>
+        <item>DE</item>
+        <item>FL</item>
+        <item>GA</item>
+        <item>HI</item>
+        <item>IA</item>
+        <item>ID</item>
+        <item>IL</item>
+        <item>IN</item>
+        <item>KS</item>
+        <item>KY</item>
+        <item>LA</item>
+        <item>MA</item>
+        <item>MD</item>
+        <item>ME</item>
+        <item>MI</item>
+        <item>MN</item>
+        <item>MO</item>
+        <item>MS</item>
+        <item>MT</item>
+        <item>NC</item>
+        <item>ND</item>
+        <item>NE</item>
+        <item>NH</item>
+        <item>NJ</item>
+        <item>NM</item>
+        <item>NV</item>
+        <item>NY</item>
+        <item>OH</item>
+        <item>OK</item>
+        <item>OR</item>
+        <item>PA</item>
+        <item>RI</item>
+        <item>SC</item>
+        <item>SD</item>
+        <item>TN</item>
+        <item>TX</item>
+        <item>UT</item>
+        <item>VA</item>
+        <item>VT</item>
+        <item>WA</item>
+        <item>WI</item>
+        <item>WV</item>
+        <item>WY</item>
+    </string-array>
+</resources>

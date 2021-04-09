@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_view_checkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Checkout"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input_first_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@id/input_last_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/input_last_name"
+        app:layout_constraintTop_toTopOf="@id/input_last_name" />
+
+    <EditText
+        android:id="@+id/input_last_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toRightOf="@+id/input_first_name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_checkout" />
+
+    <EditText
+        android:id="@+id/input_card_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Card Number"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_last_name" />
+
+    <TextView
+        android:id="@+id/text_view_expiry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Expiry"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_card_number" />
+
+    <Spinner
+        android:id="@+id/spinner_month"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/input_cvv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/spinner_year"
+        app:layout_constraintTop_toTopOf="@id/input_cvv" />
+
+    <Spinner
+        android:id="@+id/spinner_year"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/input_cvv"
+        app:layout_constraintLeft_toRightOf="@id/spinner_month"
+        app:layout_constraintRight_toLeftOf="@id/input_cvv"
+        app:layout_constraintTop_toTopOf="@id/input_cvv" />
+
+    <EditText
+        android:id="@+id/input_cvv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="CVV"
+        android:inputType="number"
+        app:layout_constraintLeft_toRightOf="@id/spinner_year"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_expiry" />
+
+    <TextView
+        android:id="@+id/text_view_payment_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Payment Address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_cvv" />
+
+    <EditText
+        android:id="@+id/input_street_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Street Address"
+        android:inputType="textPostalAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_payment_address" />
+
+    <EditText
+        android:id="@+id/input_city"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="City"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@id/input_zip"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/spinner_state"
+        app:layout_constraintTop_toBottomOf="@id/input_street_address"
+        app:layout_constraintTop_toTopOf="@id/input_zip" />
+
+    <Spinner
+        android:id="@+id/spinner_state"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/input_zip"
+        app:layout_constraintLeft_toRightOf="@id/input_city"
+        app:layout_constraintRight_toLeftOf="@id/input_zip"
+        app:layout_constraintTop_toTopOf="@id/input_zip" />
+
+    <EditText
+        android:id="@+id/input_zip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Zip"
+        android:inputType="number"
+        app:layout_constraintLeft_toRightOf="@id/spinner_state"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_street_address" />
+
+    <CheckBox
+        android:id="@+id/checkbox_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save payment for future use"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@id/button_submit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/button_submit"
+        app:layout_constraintTop_toTopOf="@id/button_submit" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Submit Payment"
+        app:layout_constraintLeft_toRightOf="@id/checkbox_save"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_city" />
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
